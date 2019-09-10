@@ -14,6 +14,7 @@ background-color: rgba(119, 119, 125, 0.58);
 box-shadow: 0 4px 15px black;
 padding-top: 30px;
 margin-top: 66px;
+margin-bottom: 80px;
 `;
 
 const NewButton = styled(Button)`

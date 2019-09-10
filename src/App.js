@@ -27,14 +27,7 @@ function App() {
 
   return (
     <div>
-      {/* <div className="header">
-        <h1>Team Building</h1>
-      </div> */}
-      <div className="team-list">
-        <h1>Team Members</h1>
       <TeamMemberList team={team} />
-      </div>
-     
       <TeamForm team={team} setTeam={setTeam} />
     </div>
   )

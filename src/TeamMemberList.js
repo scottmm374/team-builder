@@ -5,11 +5,27 @@ import { Container, Col, Row, Card, CardBody } from 'reactstrap';
 const NewCard = styled(Card)`
 background-color: rgba(119, 119, 125, 0.58);
 box-shadow: 0 4px 15px black;
+border-bottom-left-radius: 52px;
+border-top-right-radius: 52px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+text-align: center;
 `;
 
 function TeamMemberList(props) {
     return (
         <div>
+            <Container>
+
+                <NewCard>
+                   <CardBody>
+                   <h1>Team Members</h1> 
+                   </CardBody>
+                        
+                    
+                    </NewCard>  
+            </Container>
+
 
             {props.team.map((member, index) => (
                 <Container>
@@ -24,7 +40,7 @@ function TeamMemberList(props) {
                                     </CardBody>
                                 </NewCard>
                             </Col>
-                            
+
                         </Row>
 
                     </div>
