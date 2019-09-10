@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
+import  styled  from 'styled-components';
 import { Button, Form, FormGroup, Container, Input } from 'reactstrap';
+
+
+const NewFormGroup = styled(FormGroup)`
+width: 50%;
+margin-left: 276px;
+margin-top: 86px;
+`;
 
 function TeamForm(props) {
     const initialTeam = { name: "", email: "", role: "" };
@@ -28,7 +36,7 @@ function TeamForm(props) {
         <div className="App">
             <Container >
             <Form onSubmit={handleSubmit}>
-                <FormGroup>
+                <NewFormGroup>
                      <Input
                             type="text"
                             name="name"
@@ -36,8 +44,8 @@ function TeamForm(props) {
                             value={newTeam.name}
                             onChange={handleChange}
                         />
-                </FormGroup>
-                <FormGroup>
+                </NewFormGroup>
+                <NewFormGroup>
                     <Input
                             type="text"
                             name="email"
@@ -45,8 +53,8 @@ function TeamForm(props) {
                             value={newTeam.email}
                             onChange={handleChange}
                         />
-                </FormGroup>
-                <FormGroup>
+                </NewFormGroup>
+                <NewFormGroup>
                     <Input
                             type="text"
                             name="role"
@@ -54,7 +62,7 @@ function TeamForm(props) {
                             value={newTeam.role}
                             onChange={handleChange}
                         />
-                </FormGroup>
+                </NewFormGroup>
 
 
                 <Button>Submit</Button>
