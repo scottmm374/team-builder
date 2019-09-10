@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Form from './Form';
+import TeamForm from './TeamForm';
 import TeamMemberList from './TeamMemberList';
 
 import './App.css';
@@ -28,7 +28,7 @@ console.log("team", team);
 
   return (
     <div>
-      <Form  team={team} setTeam={setTeam}/>
+      <TeamForm  team={team} setTeam={setTeam}/>
       <TeamMemberList team={team} />
     </div>
   )
