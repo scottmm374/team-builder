@@ -3,6 +3,40 @@
  
 }
 
+/* .header {
+  background: white;
+  color: black;
+  text-align: center;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%
+  
+  
+}
+
+.header h1 {
+  color: grey;
+  padding-top: 10px;
+} */
+
+
+h1 {
+  color: white;
+}
+
+.team-list {
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+}
+
+.team-list h1 {
+  font-size: 4.0rem;
+  text-shadow: 3px 2px #040404;
+}
+
+
 .card{
   margin-top: 40px;
   margin-bottom: 15px;

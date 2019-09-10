@@ -18,7 +18,7 @@ function TeamMemberList(props) {
                             <Col>
                                 <NewCard>
                                     <CardBody body className="text-center">
-                                        <h1> Name: {member.name}</h1>
+                                        <h3> Name: {member.name}</h3>
                                         <p>Role: {member.role}</p>
                                         <p>Email: {member.email}</p>
                                     </CardBody>
