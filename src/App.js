@@ -1,52 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Form from './Form';
+import TeamMemberList from './TeamMemberList';
 
 import './App.css';
 
 function App() {
-const [ team, setTeam ] = useState({name: '', email: '', role: ''})
+const [ team, setTeam ] = useState([
+  {
+    name: 'Michelle',
+    email: 'michelle@gmail.com',
+    role: 'Student',
+  },
+  {
+    name: 'Ryan',
+    email: 'Ryan@gmail.com',
+    role: 'SL',
+  },
+  {
+    name: 'Chris',
+    email: 'Chris@gmail.com',
+    role: 'Student',
+  },
+])
 
-const handleChange = event => {
-  setTeam({...team, [event.target.name]: event.target.value});
-};
 
-const handleSubmit = event => {
-  event.preventDefault();
-  setTeam({ name: '', email: '', role: ''});
-}
+console.log("team", team);
 
   return (
-    <div className="App">
-      <form onSubmit={event => handleSubmit(event)}>
-        <label>
-          Name: 
-          <input 
-            type="text"
-            name="name"
-            value={team.name}
-            onChange={event => handleChange(event)}
-            />
-        </label>
-        <label>
-          Email: 
-          <input 
-            type="text"
-            name="email"
-            value={team.email}
-            onChange={event => handleChange(event)}
-            />
-        </label>
-        <label>
-          Role: 
-          <input 
-            type="text"
-            name="role"
-            value={team.role}
-            onChange={event => handleChange(event)}
-            />
-        </label>
-      </form>
+    <div>
+      <Form  team={team} setTeam={setTeam}/>
+      <TeamMemberList team={team} />
     </div>
-  );
-}
+  )
 
+}
 export default App;
