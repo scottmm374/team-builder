@@ -1,29 +1,26 @@
 .App {
   text-align: center;
- 
 }
-
-/* .header {
-  background: white;
-  color: black;
-  text-align: center;
-  height: 90px;
-  position: fixed;
-  top: 0;
-  width: 100%
-  
-  
-}
-
-.header h1 {
-  color: grey;
-  padding-top: 10px;
-} */
 
 
 h1 {
   color: white;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 32px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .team-list {
   padding-top: 80px;
