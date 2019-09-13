@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+
+h1 {
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 32px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.team-list {
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+}
+
+.team-list h1 {
+  font-size: 4.0rem;
+  text-shadow: 3px 2px #040404;
+}
+
+
+.card{
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.card p {
+  font-size: 1.5rem;
+}
+
